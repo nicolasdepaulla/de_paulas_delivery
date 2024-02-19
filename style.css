@@ -1,13 +1,55 @@
-<<<<<<< HEAD
 /**
 folha de estilo do site de_paulas_delivery
 @author nicolas de paula 
 */
 
-=======
-/**
-folha de estilo do site de_paulas_delivery
-@author nicolas de paula 
-*/
+/* CSS RESET */
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+/* importar fonts */
 
->>>>>>> d9961594524f2df5445867f0016d08ffc93d9492
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "inter", sans-serif;
+    font-size: 1em;
+}
+
+/* smartphone portrait >>>>>>>>>> */
+
+/* smartphone landscape >>>>>>>>> */
+
+/* tablet portrait >>>>>>>>>>>>>> */
+@media (min-width: 768){
+    body {
+        background-color: chartreuse;
+    }
+}
+/* tablet landscape >>>>>>>>>>>>> */
+@media (min-width: 992){
+    body {
+        background-color:chocolate ;
+    }
+}
+/* PCs ou notebooks HD >>>>>>>>>> */
+@media (min-width: 576){
+    body {
+        background-color: violet;
+    }
+}
+/* PCs notebooks TV Full HD + >>> */
+@media (min-width: 1200){
+    body {
+        background-color: violet;
+    }
+}
+
