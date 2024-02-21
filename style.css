@@ -2,54 +2,108 @@
 folha de estilo do site de_paulas_delivery
 @author nicolas de paula 
 */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* variáveis globais   */
+:root {
+    --cinzaLayout: #a9a9a9;
+    --brancoLayout: #ffffff;
+}
+
 
 /* CSS RESET */
-*{
+* {
     margin: 0;
     padding: 0;
     border: 0;
 }
-/* importar fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+/* layout */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     font-family: "inter", sans-serif;
     font-size: 1em;
 }
 
+.container {
+    margin: 0 auto;
+    padding: 50px 15px 50px 15px;
+}
+
+.Flex {
+    display: flex;
+}
+
+.Flex2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 /* smartphone portrait >>>>>>>>>> */
+/********* cabeçalho **********/
+
+
+/* FOOTER */
+footer {
+    background-color: var(--cinzaLayout);
+    color: var(--brancoLayout);
+    text-align: center;
+
+}
+
+#social {
+    margin-bottom: 25px;
+}
 
 /* smartphone landscape >>>>>>>>> */
-
+.container{
+    max-width: 540px;
+}
+.Flex {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+#social {
+    margin-bottom: 25px;
+}
 /* tablet portrait >>>>>>>>>>>>>> */
-@media (min-width: 768){
+@media (min-width: 768px){
     body {
         background-color: chartreuse;
     }
 }
+
 /* tablet landscape >>>>>>>>>>>>> */
-@media (min-width: 992){
-    body {
-        background-color:chocolate ;
-    }
-}
-/* PCs ou notebooks HD >>>>>>>>>> */
-@media (min-width: 576){
-    body {
-        background-color: violet;
-    }
-}
-/* PCs notebooks TV Full HD + >>> */
-@media (min-width: 1200){
-    body {
-        background-color: violet;
+@media (min-width: 992px) {
+    .container {
+        max-width: 540px;
+        background-color: aqua;
     }
 }
 
+/* PCs ou notebooks HD >>>>>>>>>> */
+@media (min-width: 576px) {
+    .container {
+
+        background-color: violet;
+    }
+
+}
+
+/* PCs notebooks TV Full HD + >>> */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1360px;
+
+        background-color: violet;
+    }
+}
