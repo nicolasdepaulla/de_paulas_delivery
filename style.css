@@ -9,7 +9,11 @@ folha de estilo do site de_paulas_delivery
 /* variáveis globais   */
 :root {
     --cinzaLayout: #a9a9a9;
+    --cinzatexto: #434343;
     --brancoLayout: #ffffff;
+    --backgroundcard:#f1f3f4;
+    --bordalayout: #a1a1a1;
+    --vermelholayout: #c00000;
 }
 
 
@@ -28,32 +32,73 @@ html {
 }
 
 body {
-    font-family: "inter", sans-serif;
+    font-family: "open sans", sans-serif;
     font-size: 1em;
 }
 
 .container {
     margin: 0 auto;
     padding: 50px 15px 50px 15px;
+
 }
 
-.Flex {
+.flex, .Flexmenu {
     display: flex;
-}
+    justify-content: space-between;
 
-.Flex2 {
-    display: flex;
+}
+.flex{
     flex-direction: column;
-    justify-content: center;
+
+}
+/* cartão*/
+.card {
+    margin-top: 30px;
+    width: px;
+    height: px;
+    background-color: var(--backgroundcard);
+    border: 1px solid var(--bordalayout);
+    border-radius: 25px;
+    text-align: center;
+}
+.card img{
+    border-radius: 25px 25px 0px 0px;
 }
 
+.Button{
+ text-decoration: none;
+ background-color: var(--vermelholayout);
+ color: var(--brancoLayout);
+ padding: 2px 40px;
+ border-radius: 25px;
+ font-size: 1.1em;
+ font-weight: 300;
+}
+.card h3{
+    margin: 20px 20px 20px 20px;
+
+}
+.card p{
+    padding: 10px 30px 10px 30px;
+    color: var(--cinzatexto);
+}
 /* smartphone portrait >>>>>>>>>> */
 /********* cabeçalho **********/
+header{
+    height: 100px;
+    background-color: aqua;
 
+}
+#logo img{
+
+    height: 60.88px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
 
 /* FOOTER */
 footer {
-    background-color: var(--cinzaLayout);
+    background-color:darkgray;
     color: var(--brancoLayout);
     text-align: center;
 
@@ -64,8 +109,15 @@ footer {
 }
 
 /* smartphone landscape >>>>>>>>> */
+@media (min-width: 576px){
+/*layout*/
 .container{
     max-width: 540px;
+}
+/*cabeçalho*/
+header{
+    max-width: 540px;
+    margin: 0 auto;
 }
 .Flex {
     flex-direction: row-reverse;
@@ -75,32 +127,73 @@ footer {
 #social {
     margin-bottom: 25px;
 }
+}
 /* tablet portrait >>>>>>>>>>>>>> */
 @media (min-width: 768px){
-    body {
-        background-color: chartreuse;
+    /* layout*/
+    .container{
+        max-width: 720px;
+    }
+    /*cabeçalho*/
+    header{
+        max-width: 720px;
+        height: 100px;
+        background-color: rgb(255, 255, 255)
+    }
+    #logo img{
+width: 353.34px;
+height: 81.2px;
+margin: 10px 0px 0px 0px;
     }
 }
-
 /* tablet landscape >>>>>>>>>>>>> */
 @media (min-width: 992px) {
+    /*layout*/
     .container {
-        max-width: 540px;
+        max-width: 960px;
         background-color: aqua;
+    }
+    /*cabeçalho*/
+    header{
+    max-width: 992px;
     }
 }
 
 /* PCs ou notebooks HD >>>>>>>>>> */
-@media (min-width: 576px) {
+@media (min-width: 1200px) {
+    /*layout*/
     .container {
-
-        background-color: violet;
+        max-width: 1140px;
+    }
+    /*cabeçalho*/
+    header{
+        max-width: 1140px;
+        height: 125px;
+        background-color: rgb(165, 50, 50);
+    }
+    #logo img{
+        width: 424px;
+        height: 97.4px;
     }
 
 }
-
 /* PCs notebooks TV Full HD + >>> */
 @media (min-width: 1400px) {
+    /*cabeçalho*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
     .container {
         max-width: 1360px;
 
