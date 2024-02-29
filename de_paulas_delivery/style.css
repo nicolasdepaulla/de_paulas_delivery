@@ -1,0 +1,314 @@
+/**
+folha de estilo do site de_paulas_delivery
+@author nicolas de paula 
+*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* variáveis globais   */
+:root {
+    --cinzaLayout: #a9a9a9;
+    --cinzatexto: #434343;
+    --brancoLayout: #ffffff;
+    --backgroundcard: #f1f3f4;
+    --bordalayout: #a1a1a1;
+    --vermelholayout: #c00000;
+}
+
+
+/* CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* layout */
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "open sans", sans-serif;
+    font-size: 1em;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 50px 15px 50px 15px;
+
+}
+
+.flex,
+.Flexmenu {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.flex {
+    flex-direction: column;
+}
+
+
+/* cartão*/
+.card {
+    margin-top: 30px;
+    width: 338px;
+    height: 520px;
+    background-color: var(--backgroundcard);
+    border: 1px solid var(--bordalayout);
+    border-radius: 25px;
+    text-align: center;
+}
+
+.card img {
+    border-radius: 25px 25px 0px 0px;
+}
+
+
+
+.card h3 {
+    margin: 20px 20px 20px 20px;
+
+}
+
+.card p {
+    padding: 10px 30px 10px 30px;
+    text-align: left;
+    color: var(--cinzatexto);
+}
+
+.Button {
+    text-decoration: none;
+    background-color: var(--vermelholayout);
+    color: var(--brancoLayout);
+    padding: 2px 40px;
+    border-radius: 25px;
+    font-size: 1.1em;
+    font-weight: 300;
+}
+/*topo do site*/
+#topo{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+/* smartphone portrait >>>>>>>>>> */
+/********* cabeçalho **********/
+header {
+    height: 60px;
+    background-color: aqua;
+
+}
+
+#logo img {
+    width: 100px;
+    height: 60px;
+    margin: 10px 0px 0px 10px;
+}
+
+#check {
+    display: none;
+}
+
+label {
+    font-size: 3em;
+    position: fixed;
+    top: 25px;
+    right: 0px;
+
+}
+
+nav ul {
+    list-style: none;
+    background-color: rgba(60, 60, 60, 0.5s);
+    height: 100vh;
+    position: fixed;
+    top: 80px;
+    right: -70%;
+    /*estratégia para recolher o menu*/
+    width: 70%;
+    transition: all 0.5s;
+
+}
+
+/*ativar o checkbox*/
+#check:checked~ul {
+    right: 0;
+}
+
+nav ul li {
+    text-decoration: none;
+    color: var(--brancoLayout);
+    padding: 15px;
+
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--brancoLayout);
+
+}
+
+/* FOOTER */
+footer {
+    background-color: darkgray;
+    color: var(--brancoLayout);
+    text-align: center;
+
+}
+
+#social {
+    margin-bottom: 15px;
+}
+
+/* smartphone landscape >>>>>>>>> */
+@media (min-width: 576px) {
+
+    /*layout*/
+    .container {
+        max-width: 540px;
+    }
+
+    /*cabeçalho*/
+    header {
+        max-width: 540px;
+        margin: 0 auto;
+    }
+
+    .Flex {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #social {
+        margin-bottom: 25px;
+    }
+}
+
+/* tablet portrait >>>>>>>>>>>>>> */
+@media (min-width: 768px) {
+
+    /* layout*/
+    .container {
+        max-width: 720px;
+    }
+
+    /*cabeçalho*/
+    header {
+        max-width: 720px;
+        height: 100px;
+        background-color: rgb(255, 255, 255)
+    }
+
+    label {
+        font-size: 4em;
+        top: 25px;
+        right: 5px;
+
+    }
+
+
+    #logo img {
+        width: 353.34px;
+        height: 81.2px;
+        margin: 10px 0px 0px 0px;
+    }
+
+    nav ul {
+        top: 100px;
+        right: -50%;
+        width: 50%;
+    }
+}
+
+/* tablet landscape >>>>>>>>>>>>> */
+@media (min-width: 992px) {
+
+    /*layout*/
+    .container {
+        max-width: 960px;
+        background-color: aqua;
+    }
+
+    /*cabeçalho*/
+    header {
+        max-width: 992px;
+    }
+}
+
+/* PCs ou notebooks HD >>>>>>>>>> */
+@media (min-width: 1200px) {
+
+    /*layout*/
+    .container {
+        max-width: 1140px;
+    }
+
+    /*cabeçalho*/
+    header {
+        max-width: 1140px;
+        height: 125px;
+        background-color: rgb(50, 129, 165);
+    }
+
+    #logo img {
+        width: 424px;
+        height: 97.4px;
+    }
+
+    label {
+        display: none;
+    }
+
+    nav ul {
+        width: 100%;
+        position: static;
+        height: auto;
+        background-color: var(--brancoLayout);
+    }
+
+    nav ul li {
+        border: 0;
+        float: left;
+    }
+
+    nav ul li a {
+        color: white;
+    }
+
+    nav ul li a:hover {
+        color: var(--vermelholayout);
+    }
+}
+
+/* PCs notebooks TV Full HD + >>> */
+@media (min-width: 1400px) {
+    /*cabeçalho*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .container {
+        max-width: 1360px;
+
+        background-color:white;
+    }
+}
