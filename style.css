@@ -86,7 +86,13 @@ body {
     font-size: 1.2em;
     font-weight: 700;
 }
-
+/* Topo */
+#topo {
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    z-index: 2;
+}
 /* banner */
 main {
     background: url(img/banner.jpg);
