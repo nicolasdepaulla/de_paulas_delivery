@@ -5,7 +5,7 @@
 
 
 # de_paulas_delivery
-este repositório hospeda o projeto do site de paulas delivery http://127.0.0.1:5500/index.html
+este repositório hospeda o projeto do site de paulas delivery https://nicolasdepaulla.github.io/de_paulas_delivery/
 ## autor
 nicolas de paula
 ## links utilizados 
