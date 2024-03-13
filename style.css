@@ -45,7 +45,7 @@ body {
 .Flex,
 .FlexMenu {
     display: Flex;
-    justify-content: space-between;
+    justify-content: space-between;    
 }
 
 .Flex {
