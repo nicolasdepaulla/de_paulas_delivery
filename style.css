@@ -125,9 +125,9 @@ header {
 }
 
 #logo img {
-    width: 265px;
-    height: 60.88px;
-    margin: 10px 0px 0px 10px;
+    width: 185px;
+    height: 70px;
+    margin: 8px 0px 0px 8px;
 }
 
 #check {
@@ -304,8 +304,8 @@ footer {
     }
 
     #logo img {
-        width: 424px;
-        height: 97.4px;
+        width: 200px;
+        height: 95.4px;
     }
 
     label {
@@ -347,7 +347,7 @@ footer {
     }
 
     #logo img {
-        width: 530px;
-        height: 121.75px;
+        width: 280px;
+        height: 125px;
     }
 }
