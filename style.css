@@ -12,7 +12,8 @@
 
 /* variáveis globais */
 :root {
-    --cinzaLayout: #3c3c3c;
+    --roxo:#861e8a;
+    --cinzaLayout: #323740;
     --cinzaTexto: #434343;
     --brancoLayout: #ffffff;
     --backgroundCard: #f1f3f4;
@@ -51,6 +52,12 @@ body {
 .Flex {
     flex-direction: column;
 }
+.flexbannerpaginas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 /* cartão */
 .Card {
@@ -86,6 +93,24 @@ body {
     font-size: 1.2em;
     font-weight: 700;
 }
+/*banner de páginas*/
+.bannerpaginas{
+    height: 200px;
+    background: url(img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    text-align: center;
+    
+    }
+    .bannerpaginas p{
+        color: var(--brancoLayout);
+        
+    }
+    #imgsobre{
+        border-radius: 50%;
+        
+    }
 /* Topo */
 #topo {
     position: fixed;
@@ -198,9 +223,10 @@ main video{
 }
 /* Rodapé */
 footer {
-    background-color: var(--cinzaLayout);
+    background-color: var(--roxo);
     color: var(--brancoLayout);
     text-align: center;
+    
 }
 
 #social {
@@ -287,7 +313,9 @@ footer {
     header {
         max-width: 992px;
     }
+    
 }
+
 
 /* PCs ou notebooks HD >>>>>>>>>>>>>>>> */
 @media (min-width: 1200px) {
@@ -301,6 +329,7 @@ footer {
     header {
         max-width: 1140px;
         height: 125px;
+        
     }
 
     #logo img {
