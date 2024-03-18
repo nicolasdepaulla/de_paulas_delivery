@@ -232,7 +232,17 @@ footer {
 #social {
     margin-bottom: 25px;
 }
+/* Imagem Sobre */
+#imgsobre img {
+    height: 300px;
+    width: 300px;
+    border-radius: 150px;
+    margin-bottom: 20px;
+}
 
+#imgsobre {
+    text-align: center;
+}
 /* Smartphone landscape >>>>>>>>>>>>>>> */
 @media (min-width: 576px) {
 
