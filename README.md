@@ -4,8 +4,10 @@
 
 
 
-# de_paulas_delivery
+# prp_entregas
 este repositório hospeda o projeto do site de paulas delivery https://nicolasdepaulla.github.io/de_paulas_delivery/
+## Acessar 
+![](https://github.com/nicolasdepaulla/de_paulas_delivery/blob/main/doc/qr-code.png)
 ## autor
 nicolas de paula
 ## links utilizados 
