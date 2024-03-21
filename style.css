@@ -67,11 +67,7 @@ body {
     align-items: center;
 }
 
-.FlexCard {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
+
 
 .FlexMenu {
     justify-content: space-between;
@@ -127,6 +123,13 @@ body {
 
 }
 
+.BannerPaginas h1 {
+    color: var(--gelo);
+    font-weight: 600;
+    font-size: 2.75em;
+    text-shadow: #000 0.05em 0.05em 0.05em;
+}
+
 .bannerpaginas p {
     color: var(--brancoLayout);
 
@@ -147,7 +150,7 @@ body {
 
 /* banner */
 main {
-    background: url(img/banner.jpg);
+    background: url(img/img-back.jpg);
     height: 50vh;
     background-size: cover;
     background-position: center;
@@ -224,11 +227,76 @@ nav ul li a {
     color: var(--brancoLayout)
 }
 
+.Banner {
+    display: none;
+}
+
+/* Destaque */
+#destaque {
+    position: relative;
+    height: 55vh;
+}
+
 /* Introdução */
 #intro {
-    background: url(img/img-back.jpg);
+    background: url(img/banner.jpg);
     background-size: cover;
     background-position: center;
+}
+
+#textoIntro h1 {
+    text-shadow: #000 0.05em 0.05em 0.05em;
+    font-weight: 600;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.TopicosIntro {
+    margin-top: 10px;
+}
+
+.TopicosIntro img {
+    margin-right: 20px;
+}
+
+
+
+/* YouTube */
+#youtube {
+    background: url(img/wp.png);
+    background-size: cover;
+    background-position: center;
+    color: var(--backgroundCard)
+}
+
+#imagemYoutube {
+    display: none;
+}
+
+#textoYoutube h2 {   
+    text-shadow: #000 0.05em 0.05em 0.05em;
+    font-weight: 500;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+#textoYoutube p {
+    margin-bottom: 35px;
+    text-shadow: 0px 5px 10px var(--cinzaTexto),
+        0px 10px 10px rgba(0, 0, 0, 0.15),
+        0px 15px 15px rgba(0, 0, 0, 0.1),
+        0px 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+.Destacado {
+    font-weight: 700;
+    text-shadow: #000 0.05em 0.05em 0.05em;
+}
+
+#youtube .Button {
+    border: 2px solid var(--backgroundCard);
+    padding: 10px 20px;
+    font-size: 1em;
 }
 
 
@@ -372,6 +440,50 @@ footer {
 
 }
 
+/* Introdução */
+#destaqueIntro {
+    display: inline;
+}
+
+#destaqueIntro img {
+    margin-right: 50px;
+    border-radius: 50%;
+}
+ /* Youtube */
+ #youtube {
+    background: none;
+    background-color: var(--cinzaTexto);
+}
+
+#textoYoutube p {
+    margin-right: 100px;
+    text-shadow: none;
+}
+
+#imagemYoutube {
+    display: inline;
+}
+
+#imagemYoutube img {
+    width: 100px;
+    height: 100px;
+    
+}
+
+/* Projetos */
+#projetos h2 {
+    font-size: 2em;
+}
+
+/*** Página Sobre ***/
+.FlexPage {
+    flex-direction: row;
+}
+
+#imagemSobre {
+    margin-right: 50px;
+}
+
 
 /* PCs ou notebooks HD >>>>>>>>>>>>>>>> */
 @media (min-width: 1200px) {
@@ -427,6 +539,11 @@ footer {
 /* PCs, notebooks ou Tv Full HD + >>>> */
 @media (min-width: 1400px) {
 
+    /* Layout */
+    .Container {
+        max-width: 1140px;
+    }
+
     /* Cabeçalho */
     header {
         height: 150px;
@@ -436,4 +553,41 @@ footer {
         width: 280px;
         height: 125px;
     }
+}
+
+/* Destaque */
+
+.Banner {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    color: var(--branco);
+}
+
+#destaque {
+    height: 75vh;
+}
+
+#slogan {
+    font-size: 2em;
+    font-weight: 400;
+}
+
+
+
+#textoDestaque {
+    font-size: 1em;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+/* Introdução */
+#intro {
+    background-attachment: fixed;
+}
+
+#textoIntro h1 {
+    font-size: 2em;
 }
