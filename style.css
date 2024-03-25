@@ -77,6 +77,7 @@ body {
     align-items: center;
 }
 
+
 /* cartão */
 .Card {
     margin-top: 30px;
@@ -110,6 +111,13 @@ body {
     border-radius: 25px;
     font-size: 1.2em;
     font-weight: 700;
+    
+}
+.Container a {
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-left: 20px;
+    color: #f1f3f4;
 }
 
 /*banner de páginas*/
@@ -239,13 +247,13 @@ nav ul li a {
 
 /* Introdução */
 #intro {
-    background: url(img/banner.jpg);
+    background: url(img/banner.png);
     background-size: cover;
     background-position: center;
 }
 
 #textoIntro h1 {
-    text-shadow: #000 0.05em 0.05em 0.05em;
+    
     font-weight: 600;
     font-size: 1.5em;
     margin-bottom: 10px;
@@ -271,6 +279,7 @@ nav ul li a {
 
 #imagemYoutube {
     display: none;
+    
 }
 
 #textoYoutube h2 {   
@@ -453,6 +462,8 @@ footer {
  #youtube {
     background: none;
     background-color: var(--cinzaTexto);
+    
+    
 }
 
 #textoYoutube p {
@@ -462,6 +473,7 @@ footer {
 
 #imagemYoutube {
     display: inline;
+    
 }
 
 #imagemYoutube img {
