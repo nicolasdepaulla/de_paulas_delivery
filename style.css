@@ -147,6 +147,13 @@ body {
     border-radius: 50%;
 
 }
+.txtsobre p{
+    font-family: sans-serif;
+    color: #ffffff;
+    font-weight: 800;
+    
+    
+}
 
 /* Topo */
 #topo {
@@ -261,7 +268,7 @@ nav ul li a {
 }
 
 .TopicosIntro {
-    margin-top: 10px;
+    margin-right: 10px;
     color: #ffffff;
 }
 
@@ -362,8 +369,10 @@ footer {
 }
 
 #imgsobre {
+    
     text-align: center;
 }
+
 
 /* Smartphone landscape >>>>>>>>>>>>>>> */
 @media (min-width: 576px) {
