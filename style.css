@@ -121,6 +121,38 @@ body {
     color: #f1f3f4;
 }
 
+form {
+    background: none;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input[type="nome"],
+input[type="rg"],
+input[type="cpf"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    /*compatibiliza o tamanho da caixa como box model*/
+    margin-bottom: 10px;
+    border: 1px solid#cccccc;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #0000ff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type="reset"] {
+    background-color: #ffcc00;
+}
+
 /*banner de páginas*/
 .bannerpaginas {
     height: 200px;
