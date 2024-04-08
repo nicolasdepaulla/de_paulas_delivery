@@ -131,6 +131,9 @@ form {
 input[type="nome"],
 input[type="rg"],
 input[type="cpf"],
+input[type="Cep"],
+input[type="Cep destino"],
+input[type="numero"],
 textarea {
     width: 100%;
     padding: 10px;
@@ -297,6 +300,10 @@ nav ul li a {
     background: url(img/banner.png);
     background-size: cover;
     background-position: center;
+}
+#intro li{
+    display:flex;
+    margin: 5px;
 }
 
 #textoIntro h1 {
