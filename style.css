@@ -19,6 +19,7 @@
     --backgroundCard: #f1f3f4;
     --bordaLayout: #a1a1a1;
     --vermelhoLayout: #c00000;
+    --pretosombra:#000000;
 }
 
 /* CSS RESET */
@@ -185,6 +186,7 @@ input[type="reset"] {
 }
 
 .txtsobre p {
+    text-shadow: var(--pretosombra) 0.08em 0.08em 0.08em;
     font-family: sans-serif;
     color: #ffffff;
     font-weight: 800;
@@ -476,8 +478,8 @@ footer {
     }
 
     #logo img {
-        width: 190px;
-        height: 80px;
+        width: 353.34px;
+        height: 81.2px;
         margin: 10px 0px 0px 0px;
     }
 
