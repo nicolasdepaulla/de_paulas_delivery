@@ -7,7 +7,7 @@
             src="http://jigsaw.w3.org/css-validator/images/vcss"
             alt="CSS válido!" />
     </a>
-</p>)
+</p>
 
 
 
