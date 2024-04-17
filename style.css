@@ -156,6 +156,18 @@ input[type="reset"] {
 input[type="reset"] {
     background-color: #ffcc00;
 }
+input[name="nome"],
+input[name="RG"],
+input[name="Cpf"],
+input[name="CEP"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    /*compatibiliza o tamanho da caixa como box model*/
+    margin-bottom: 10px;
+    border: 1px solid#cccccc;
+}
 
 /*banner de páginas*/
 .bannerpaginas {
